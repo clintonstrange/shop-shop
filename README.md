@@ -1,4 +1,4 @@
-# Clints Shop Shop
+# Clint's Shop Shop
 <a href=./LICENSE>![License](https://img.shields.io/badge/License%3A-MIT-green.svg)</a>
 
 ## Description
