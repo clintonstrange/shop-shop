@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/react-hooks";
-import { useStoreContext } from "../utils/GlobalState";
+// import { useStoreContext } from "../utils/GlobalState";
+import store from "../utils/store";
 import {
   REMOVE_FROM_CART,
   UPDATE_CART_QUANTITY,
@@ -15,7 +16,8 @@ import { QUERY_PRODUCTS } from "../utils/queries";
 import spinner from "../assets/spinner.gif";
 
 function Detail() {
-  const [state, dispatch] = useStoreContext();
+  //const [state, dispatch] = useStoreContext();
+  const [state, dispatch] = store;
   const { id } = useParams();
 
   const [currentProduct, setCurrentProduct] = useState({});

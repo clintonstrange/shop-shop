@@ -5,11 +5,12 @@ import {
 } from "../../utils/actions";
 import { useQuery } from "@apollo/react-hooks";
 import { QUERY_CATEGORIES } from "../../utils/queries";
-import { useStoreContext } from "../../utils/GlobalState";
+// import { useStoreContext } from "../../utils/Globalstate";
+import store from "../../utils/store";
 import { idbPromise } from "../../utils/helpers";
 
 function CategoryMenu({ setCategory }) {
-  const [state, dispatch] = useStoreContext();
+  const [state, dispatch] = store;
 
   const { categories } = state;
 
