@@ -5,11 +5,11 @@ import { pluralize } from "../../utils/helpers";
 import store from "../../utils/store";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
-
+import { useSelector } from "react-redux"
 function ProductItem(item) {
   const { image, name, _id, price, quantity } = item;
   const [state, dispatch] = store;
-  
+
 
   const { cart } = state;
 

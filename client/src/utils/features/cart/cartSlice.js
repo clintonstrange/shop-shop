@@ -8,9 +8,9 @@ import {
 } from "../../actions";
 
 const initialState = {
-    cart: [],
-    cartOpen: false,
-  };
+  cart: [],
+  ccartOpen: false,
+};
 
 export default function cartReducer(state = initialState, action) {
   switch (action.type) {

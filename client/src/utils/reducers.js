@@ -9,27 +9,22 @@
 //   CLEAR_CART,
 //   TOGGLE_CART,
 // } from "./actions";
-// import { useReducer } from "react";
-import cartReducer from "../utils/features/cart/cartSlice";
-import productReducer from "../utils/features/products/productsSlice";
-import categoryReducer from "../utils/features/categories/categoriesSlice";
-import { combineReducers } from "redux";
 
-const rootReducer = combineReducers({
-  products: productReducer,
-  categories: categoryReducer,
-  cart: cartReducer
-})
+const initialState = {
+  products: [],
+  categories: [],
+  currentCategory: '',
+  cart: [],
+  cartOpen: false
+};
 
-export default rootReducer
-
-// export default function rootReducer(state = initialState, action) {
-//     return {
-//       products: productReducer(state.products, action),
-//       categories: categoryReducer(state.category, action),
-//       cart: cartReducer(state.cart, action)
-//     }
-//   }
+export default function rootReducer(state = initialState, action) {
+    return {
+      products: productReducer(state.products, action),
+      categories: categoryReducer(state.category, action),
+      cart: cartReducer(state.cart, action)
+    }
+  }
 
 // export const reducer = (state, action) => {
 //   switch (action.type) {

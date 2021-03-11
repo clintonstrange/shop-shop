@@ -11,7 +11,7 @@ import {
 } from "../utils/actions";
 import { idbPromise } from "../utils/helpers";
 import Cart from "../components/Cart";
-
+import { useSelector } from "react-redux"
 import { QUERY_PRODUCTS } from "../utils/queries";
 import spinner from "../assets/spinner.gif";
 
