@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
-// import { useStoreContext } from "../../utils/GlobalState";
-import store from "../../utils/store";
+
+import { useDispatch, useSelector } from "react-redux";
 import { UPDATE_PRODUCTS } from "../../utils/actions";
 import { useQuery } from "@apollo/react-hooks";
 import { idbPromise } from "../../utils/helpers";
 import ProductItem from "../ProductItem";
 import { QUERY_PRODUCTS } from "../../utils/queries";
 import spinner from "../../assets/spinner.gif";
-import { useSelector } from "react-redux"
 function ProductList() {
-  const [state, dispatch] = store;
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state);
 
   const { currentCategory } = state;
 
