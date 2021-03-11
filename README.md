@@ -7,7 +7,7 @@ This application is a full-stack MERN applicaiton that uses Redux to manage the 
 
 This application was refactored from its existing react Context API state management to manage state using Redux. This application also depends on MongoDB, Express, React and Node (MERN) including IndexedDB for persistence. 
 
-![book-search](https://user-images.githubusercontent.com/71712425/110372049-6d373280-8013-11eb-8063-67f240aa5d10.png)
+![clint-shop-shop](https://user-images.githubusercontent.com/71712425/110841461-83d7c680-826b-11eb-9abd-7df0421ff822.png)
 
 ## Table of Contents
 
