@@ -25,7 +25,7 @@ This application was refactored from its existing react Context API state manage
   ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)  
   ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)  
   ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
-  ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+  ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)   
   ![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)  
   ![GraphQL](https://img.shields.io/badge/GraphQL-E4405F?style=for-the-badge)  
   ![Apollo](https://img.shields.io/badge/Apollo_Server-8B89CC?style=for-the-badge)  
